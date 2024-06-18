@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div {text-align: center; color : #01080b;}
+        a {text-align: center; color : #c1bfc0;}
+        p {text-align: center; color : #b30d39;}
+    </style>
+{{!-- This is the grey inner box containing the number of available rooms  --}}
+<body>
+    <div style = "background-color:#c1bfc0; 
+       width:125px; 
+       height:150px; 
+       position:relative; 
+       top:180px; 
+       left:40px; 
+       z-index:2;
+       font-family: Helvetica; font-size: 20px;">
+               Available Rooms: 
+    {{!-- This is the actual number of rooms, received from data\getAPI.js numAvailableRooms --}}
+    <div
+    style = "position:relative; 
+       top: 20px; 
+       left: 0px; 
+       z-index:3;
+       font-family: Helvetica; font-size: 35px;">
+       {{numAvailableRooms}}
+       </div>
+    
+    </div>
+
+    {{!-- This is the border box --}}
+    <div style = "background-color:#b30d39; 
+       width:185px; 
+       height:210px; 
+       position:relative; 
+       top: 0px; 
+       left:10px; 
+       z-index:1;
+       font-family: Helvetica; font-size: 20px;">
+
+    </div>
+
+    {{!-- This is the link to the booking site --}}
+    <a href="https://stevens.libcal.com/reserve/grouprooms" 
+        style=" position:relative; 
+        top:-25px; 
+        left:11px; 
+        z-index:2;       
+        font-family: Helvetica; 
+        font-size: 20px;">
+
+        Book a Group Room</a>
+
+   
+
+
+
+ </body>
+</html>
